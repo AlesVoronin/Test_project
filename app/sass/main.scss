@@ -1,4 +1,86 @@
-body {
+@import 'menu';
+@import 'carousel';
+@import 'form';
 
+$background-color: #EAEAEA;
+$white: #FFFFFF;
+
+
+*{
+  padding: 0;
+  margin: 0;
 }
+
+body {
+  display: flex;
+  padding: 0;
+  flex-direction: column;
+  background: $background-color;
+}
+
+.basic-wrapper {
+  display: flex;
+}
+.logo{
+  width: 500px;
+  height: 30vh;
+  background-image: url(../img/logo.png);
+  background-size: cover;
+  background-position-y: center;
+  background-repeat: no-repeat;
+}
+main{
+  width: calc(100% - 421px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+.hows-that-pokemon {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  height: 30vh;
+  .title{
+    font-family: "Open Sans", sans-serif;
+    font-size: 30px;
+    color: $background-hover-menu;
+    padding-bottom: 10%;
+  }
+  .pokemon-form-button {
+    width: 18vh;
+    height: 18vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: $white;
+
+    font-family: 'Sans Serif', sans-serif;
+    font-size: 120px;
+
+    border-radius: 50%;
+
+  }
+  .pokemon-form-button:hover{
+    cursor: pointer;
+  }
+}
+
+footer{
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  h3{
+    margin-right: 1rem;
+    margin-bottom: 1rem;
+
+    font-family: "Open Sans", sans-serif;
+  }
+}
+
+
 

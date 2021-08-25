@@ -1,51 +1,104 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Тестовое задание для </title>
-    <link rel="stylesheet" href="css/main.css">
-    <script src="js/common.js"></script>
+  <meta charset="UTF-8">
+  <title>Тестовое задание для </title>
+  <link rel="stylesheet" href="css/main.css">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
 </head>
 <body>
-<nav class="desktop_menu">
-    <ul>
-        <li>Главная</li>
-        <li>Справочник</li>
-        <li>Контакты</li>
-    </ul>
-</nav>
-<nav class="burger-button">
 
-</nav>
-<nav class="burger-menu">
-    <ul>
-        <li>Главная</li>
-        <li>Справочник</li>
-        <li>Контакты</li>
-    </ul>
-</nav>
-<header>
-    <section class="carousel">
-    </section>
-</header>
 <article class="modal-form">
-    <label for="submit-button"></label>
-    <img src="" alt=""/>
-    <input type="text" class="form-control" placeholder="" id="submit-button">
-    <input type="submit" class="submit-button">
+  <label for="submit-button"><b>Это что за покемон ?</b></label>
+  <img src="img/pokemon.jpg" alt=""/>
+  <input type="text" class="form-control" placeholder="" id="submit-button">
+  <input type="submit" class="submit-button" value="OK">
 </article>
-<main>
-    <div class="title">
-        <h2></h2>
-        <span></span>
-    </div>
-    <div class="pokemon-form-button">
-        <img src="" alt=""/>
-    </div>
-</main>
-<footer>
-    <h3>© by Ales Voronin 2021</h3>
-</footer>
 
+<div class="basic-wrapper">
+
+  <nav class="desktop_menu">
+    <ul>
+      <li class="select-item">
+        <div class="prev-menu-elem">
+        </div>
+        <div class="menu-item">
+          <h2>Главная</h2></div>
+        <div class="post-menu-elem">
+        </div>
+      </li>
+      <li>
+        <div class="prev-menu-elem">
+        </div>
+        <div class="menu-item">
+          <h2>Справочник</h2>
+        </div>
+        <div class="post-menu-elem">
+        </div>
+      </li>
+      <li>
+        <div class="prev-menu-elem">
+        </div>
+        <div class="menu-item">
+          <h2>Об авторе</h2>
+        </div>
+        <div class="post-menu-elem">
+        </div>
+      </li>
+    </ul>
+  </nav>
+  <nav class="burger-button">
+
+  </nav>
+
+  <nav class="burger-menu">
+    <ul>
+      <li>Главная</li>
+      <li>Справочник</li>
+      <li>Контакты</li>
+    </ul>
+  </nav>
+  <main>
+    <div class="logo">
+
+    </div>
+    <section class="carousel-container">
+      <div id="carousel" class="carousel">
+        <img src="img/carousel/arrow-button.png" class="arrow prev" alt="left button">
+        <div class="gallery">
+          <ul class="images">
+            <li><img src="img/carousel/pikachu-2.png"></li>
+            <li><img src="img/carousel/bullbasaur.png"></li>
+            <li><img src="img/carousel/psyduck.png"></li>
+            <li><img src="img/carousel/meowth.png"></li>
+            <li><img src="img/carousel/charmander.png"></li>
+            <li><img src="img/carousel/jigglypuff.png"></li>
+            <li><img src="img/carousel/squirtle.png"></li>
+            <li><img src="img/carousel/snorlax.png"></li>
+            <li><img src="img/carousel/abra.png"></li>
+            <li><img src="img/carousel/mankey.png"></li>
+          </ul>
+        </div>
+        <img src="img/carousel/arrow-button.png" class="arrow next" alt="right button"/>
+      </div>
+    </section>
+
+    <div class="hows-that-pokemon">
+      <div class="title">
+        <h2>Это что за поекемон ?</h2>
+      </div>
+      <div class="pokemon-form-button">
+        <span>?</span>
+      </div>
+    </div>
+    <footer>
+      <h3>© by Ales Voronin 2021</h3>
+    </footer>
+  </main>
+</div>
+
+<script src="js/common.js"></script>
+<script src="js/carousel.js"></script>
+<script src="js/modal-form.js"></script>
 </body>
 </html>

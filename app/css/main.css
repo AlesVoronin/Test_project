@@ -1,0 +1,262 @@
+@charset "UTF-8";
+.desktop_menu {
+  background-color: #FFCA05;
+  width: 421px;
+  height: 100vh;
+  border-radius: 0px 50px 50px 0px;
+}
+.desktop_menu ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  height: 100%;
+}
+.desktop_menu ul li {
+  height: 233px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+.desktop_menu ul li .menu-item {
+  width: 100%;
+  height: 133px;
+  border-radius: 50px 0px 0px 50px;
+  background-color: #FFCA05;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.desktop_menu ul li .menu-item h2 {
+  color: #000000;
+  font-family: "Open Sans", sans-serif;
+  font-size: 32px;
+}
+.desktop_menu ul li .prev-menu-elem {
+  width: 50px;
+  height: 50px;
+  text-align: end;
+  background-image: none;
+  background-repeat: no-repeat;
+}
+.desktop_menu ul li .post-menu-elem {
+  width: 50px;
+  height: 50px;
+  text-align: end;
+  background-image: none;
+  background-repeat: no-repeat;
+}
+.desktop_menu ul li:hover .menu-item {
+  transition: all 0.5s ease-out;
+  background-color: #3269B2;
+  cursor: pointer;
+}
+.desktop_menu ul li:hover .menu-item h2 {
+  color: #EAEAEA;
+}
+.desktop_menu ul li:hover .prev-menu-elem {
+  transition: all 0.5s ease-out;
+  background-image: url("../img/prev-item__hover.png");
+}
+.desktop_menu ul li:hover .post-menu-elem {
+  transition: all 0.5s ease-out;
+  background-image: url("../img/post-item__hover.png");
+}
+.desktop_menu ul .select-item .menu-item {
+  background-color: #EAEAEA;
+}
+.desktop_menu ul .select-item .prev-menu-elem {
+  background-image: url("../img/prev-item.png");
+  background-repeat: no-repeat;
+}
+.desktop_menu ul .select-item .post-menu-elem {
+  background-image: url("../img/post-item.png");
+  background-repeat: no-repeat;
+}
+
+.burger-button {
+  display: none;
+}
+
+.burger-menu {
+  display: none;
+}
+
+body {
+  padding: 10px;
+}
+
+.carousel {
+  transform: scale(1.2);
+  position: relative;
+  width: 398px;
+  padding: 50px 100px;
+}
+
+.carousel img {
+  width: auto;
+  height: 100px;
+  /* делаем этот элемент блочным, чтобы убрать лишнее пространство вокруг картинок */
+  display: block;
+}
+
+.arrow {
+  position: absolute;
+  top: 60px;
+  padding: 0;
+  display: block;
+}
+
+.arrow:focus {
+  outline: none;
+}
+
+.arrow:hover {
+  cursor: pointer;
+}
+
+.prev {
+  left: 7px;
+  transform: rotate(180deg);
+}
+
+.next {
+  right: 7px;
+}
+
+.gallery {
+  width: 400px;
+  overflow: hidden;
+}
+
+.gallery ul {
+  height: 130px;
+  width: 9999px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  transition: margin-left 250ms;
+  /* удаляем пустое пространство между элементами li, у которых установлен inline-block */
+  /* http://davidwalsh.name/remove-whitespace-inline-block */
+  font-size: 0;
+}
+
+.gallery li {
+  display: inline-block;
+}
+
+.modal-form {
+  display: none;
+  position: absolute;
+  left: calc(25vw);
+  top: calc(15vh);
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  z-index: 2;
+  width: 50vw;
+  height: 70vh;
+  background-color: #FFE091;
+  border-radius: 50px;
+}
+.modal-form label {
+  text-align: center;
+  font-family: "Open Sans", sans-serif;
+  font-size: 24px;
+}
+.modal-form img {
+  width: 50%;
+  border-radius: 10%;
+}
+.modal-form .form-control {
+  width: 60%;
+  height: 3rem;
+  border: 4px solid #3269B2;
+  font-size: 2rem;
+  border-radius: 15px;
+  outline: none;
+}
+.modal-form .submit-button {
+  width: 6rem;
+  height: 6rem;
+  border: none;
+  cursor: pointer;
+  font-family: "Open Sans", sans-serif;
+  font-size: 30px;
+  border-radius: 50%;
+}
+.modal-form .submit-button:hover {
+  background-color: #3269B2;
+  color: #FFE091;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  display: flex;
+  padding: 0;
+  flex-direction: column;
+  background: #EAEAEA;
+}
+
+.basic-wrapper {
+  display: flex;
+}
+
+.logo {
+  width: 500px;
+  height: 30vh;
+  background-image: url(../img/logo.png);
+  background-size: cover;
+  background-position-y: center;
+  background-repeat: no-repeat;
+}
+
+main {
+  width: calc(100% - 421px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.hows-that-pokemon {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 30vh;
+}
+.hows-that-pokemon .title {
+  font-family: "Open Sans", sans-serif;
+  font-size: 30px;
+  color: #3269B2;
+  padding-bottom: 10%;
+}
+.hows-that-pokemon .pokemon-form-button {
+  width: 18vh;
+  height: 18vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #FFFFFF;
+  font-family: "Sans Serif", sans-serif;
+  font-size: 120px;
+  border-radius: 50%;
+}
+.hows-that-pokemon .pokemon-form-button:hover {
+  cursor: pointer;
+}
+
+footer {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+footer h3 {
+  margin-right: 1rem;
+  margin-bottom: 1rem;
+  font-family: "Open Sans", sans-serif;
+}

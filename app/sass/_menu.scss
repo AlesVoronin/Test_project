@@ -1,0 +1,105 @@
+$background-menu: #FFCA05;
+$background-color: #EAEAEA;
+$background-hover-menu: #3269B2;
+$base-text: #000000;
+
+.desktop_menu {
+  background-color: $background-menu;
+  width: 421px;
+  height: 100vh;
+  border-radius: 0px 50px 50px 0px;
+
+  ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 100%;
+
+    li {
+      height: 233px;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+
+      .menu-item {
+        width: 100%;
+        height: 133px;
+        border-radius: 50px 0px 0px 50px;
+        background-color: $background-menu;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        h2 {
+          color: $base-text;
+          font-family: 'Open Sans', sans-serif;
+          font-size: 32px;
+        }
+      }
+
+      .prev-menu-elem {
+        width: 50px;
+        height: 50px;
+        text-align: end;
+        background-image: none;
+        background-repeat: no-repeat;
+      }
+
+      .post-menu-elem {
+        width: 50px;
+        height: 50px;
+        text-align: end;
+        background-image: none;
+        background-repeat: no-repeat;
+      }
+    }
+
+    li:hover {
+      .menu-item {
+        transition: all 0.5s ease-out;
+        background-color: $background-hover-menu;
+        cursor: pointer;
+
+        h2 {
+          color: $background-color;
+        }
+      }
+
+      .prev-menu-elem {
+        transition: all 0.5s ease-out;
+        background-image: url("../img/prev-item__hover.png");
+      }
+
+      .post-menu-elem {
+        transition: all 0.5s ease-out;
+        background-image: url("../img/post-item__hover.png");
+      }
+    }
+
+    .select-item {
+      .menu-item {
+        background-color: $background-color;
+      }
+
+      .prev-menu-elem {
+        background-image: url("../img/prev-item.png");
+        background-repeat: no-repeat;
+      }
+
+      .post-menu-elem {
+        background-image: url("../img/post-item.png");
+        background-repeat: no-repeat;
+      }
+    }
+  }
+}
+
+
+//BURGER-MENU
+.burger-button {
+  display: none;
+}
+
+.burger-menu {
+  display: none;
+}
