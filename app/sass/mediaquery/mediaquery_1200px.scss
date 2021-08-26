@@ -1,7 +1,7 @@
 @media all and (max-width: 1200px){
   .logo{
     width: 333px;
-    height: 17vh;
+    //height: 40vh;
   }
   .carousel{
     transform: scale(0.9);
@@ -38,16 +38,27 @@
     left: 30px;
   }
 }
+
+@media all and (max-width: 800px){
+  .lightning{
+    height: 20rem;
+    top: 15vh;
+  }
+}
+
 @media all and (max-width: 550px){
+  main{
+    .logo{
+      width: 370px;
+      //height: 16vh;
+      background-size: contain;
+    }
+  }
   .carousel{
     width: 100px;
   }
   .gallery{
     width: 100px;
-  }
-  .logo{
-    width: 270px;
-    height: 16vh;
   }
   .hows-that-pokemon{
     .title{
@@ -56,12 +67,7 @@
   }
 }
 
-@media all and (max-width: 800px){
-  .lightning{
-    height: 20rem;
-    top: 15vh;
-  }
-}
+
 //@media all and (max-width: 1400px){
 //  .lightning-left{
 //    left: 38vw;
