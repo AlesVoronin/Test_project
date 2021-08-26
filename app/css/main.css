@@ -252,11 +252,24 @@ body {
   margin: 0;
 }
 
+a {
+  text-decoration: none;
+}
+
+a:visited {
+  text-decoration: none;
+}
+
+a:active {
+  text-decoration: none;
+}
+
 body {
   display: flex;
   padding: 0;
   flex-direction: column;
   background: #EAEAEA;
+  overflow-x: hidden;
 }
 
 .basic-wrapper {
@@ -319,4 +332,21 @@ footer h3 {
   margin-right: 1rem;
   margin-bottom: 1rem;
   font-family: "Open Sans", sans-serif;
+}
+
+.lightning {
+  z-index: -1;
+  position: absolute;
+  left: calc(100vw - 10rem);
+  top: 10vh;
+  height: 25rem;
+}
+
+.lightning-left {
+  z-index: -1;
+  position: absolute;
+  transform: scale(-1, 1);
+  top: 60vh;
+  left: 500px;
+  height: 10rem;
 }

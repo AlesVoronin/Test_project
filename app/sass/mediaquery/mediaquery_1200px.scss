@@ -34,6 +34,9 @@
       width: 65%;
     }
   }
+  .lightning-left{
+    left: 30px;
+  }
 }
 @media all and (max-width: 550px){
   .carousel{
@@ -53,4 +56,15 @@
   }
 }
 
+@media all and (max-width: 800px){
+  .lightning{
+    height: 20rem;
+    top: 15vh;
+  }
+}
+//@media all and (max-width: 1400px){
+//  .lightning-left{
+//    left: 38vw;
+//  }
+//}
 
