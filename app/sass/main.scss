@@ -67,6 +67,8 @@ main{
   }
   .pokemon-form-button:hover{
     cursor: pointer;
+    background-color: $background-hover-menu;
+    color: $white;
   }
 }
 

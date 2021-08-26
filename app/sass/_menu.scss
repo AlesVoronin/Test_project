@@ -7,7 +7,7 @@ $base-text: #000000;
   background-color: $background-menu;
   width: 421px;
   height: 100vh;
-  border-radius: 0px 50px 50px 0px;
+  border-radius: 0 50px 50px 0;
 
   ul {
     display: flex;
@@ -24,7 +24,7 @@ $base-text: #000000;
       .menu-item {
         width: 100%;
         height: 133px;
-        border-radius: 50px 0px 0px 50px;
+        border-radius: 50px 0 0 50px;
         background-color: $background-menu;
         display: flex;
         justify-content: center;
@@ -56,7 +56,7 @@ $base-text: #000000;
 
     li:hover {
       .menu-item {
-        transition: all 0.5s ease-out;
+        transition: all 0.3s ease-out;
         background-color: $background-hover-menu;
         cursor: pointer;
 
@@ -66,12 +66,12 @@ $base-text: #000000;
       }
 
       .prev-menu-elem {
-        transition: all 0.5s ease-out;
+        transition: all 0.3s ease-out;
         background-image: url("../img/prev-item__hover.png");
       }
 
       .post-menu-elem {
-        transition: all 0.5s ease-out;
+        transition: all 0.3s ease-out;
         background-image: url("../img/post-item__hover.png");
       }
     }
@@ -100,6 +100,64 @@ $base-text: #000000;
   display: none;
 }
 
-.burger-menu {
-  display: none;
+
+.burger-button{
+  z-index: 4;
+  align-self: flex-end;
+  flex-direction: column;
+  justify-content: space-between;
+  cursor: pointer;
+  margin: 20px 20px 0 0 ;
+  height: 50px;
+  .burger-button__line{
+    width: 60px;
+    height: 10px;
+    background-color: $background-hover-menu;
+    border-radius: 10px;
+  }
 }
+
+.burger-menu{
+  display: flex;
+  position: absolute;
+  z-index: 3;
+  top:-100vh;
+  //display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+  background-color: $background-menu;
+
+  transition: all 0.7s cubic-bezier(0.42, 0, 0.06, 1.1);;
+
+  font-family: "Open Sans", sans-serif;
+  font-size: 6vw;
+
+  ul{
+    height: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    li {
+      transition: all 0.2s ease-in-out;
+      display: flex;
+      justify-content: center;
+      width: 100vw;
+    }
+    li:hover{
+      cursor: pointer;
+      border-radius: 50px 0 0 50px;
+      background-color: $background-hover-menu;
+    }
+    .select-item{
+      //text-decoration: underline;
+      border-radius: 0 50px 50px 0;
+      background-color: $background-color;
+    }
+
+  }
+
+}
+
